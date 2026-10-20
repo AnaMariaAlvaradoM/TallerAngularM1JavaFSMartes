@@ -1,0 +1,26 @@
+{
+  "curso": "🐾 Huella Amiga · Taller Angular · Módulo 1",
+  "fechaLimite": "2026-11-15T23:59:00-05:00",
+  "patronTest": "^\\s*it\\(",
+  "entregables": ["src/app/"],
+  "protegidos": [
+    "src/pruebas/",
+    "scripts/",
+    ".github/",
+    "package.json",
+    "package-lock.json",
+    "angular.json",
+    "tsconfig.json",
+    "tsconfig.app.json",
+    "tsconfig.spec.json"
+  ],
+  "ejercicios": [
+    { "id": "1.1", "titulo": "Modelo Mascota", "test": "src/pruebas/fase1/01-modelo.spec.ts" },
+    { "id": "1.2", "titulo": "Datos de prueba", "test": "src/pruebas/fase1/02-datos.spec.ts" },
+    { "id": "1.3", "titulo": "Etiqueta", "test": "src/pruebas/fase1/03-etiqueta.spec.ts" },
+    { "id": "1.4", "titulo": "Encabezado", "test": "src/pruebas/fase1/04-encabezado.spec.ts" },
+    { "id": "1.5", "titulo": "Tarjeta de mascota", "test": "src/pruebas/fase1/05-tarjeta-mascota.spec.ts" },
+    { "id": "1.6", "titulo": "Listado de mascotas", "test": "src/pruebas/fase1/06-listado-mascotas.spec.ts" },
+    { "id": "1.7", "titulo": "Estructura", "test": "src/pruebas/fase1/07-estructura.test.mjs" }
+  ]
+}

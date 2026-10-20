@@ -1,0 +1,64 @@
+/* Kit de estilos de Huella Amiga · viene listo: no necesitas escribir CSS */
+:root {
+  --color-principal: #5418cc;
+  --color-vibrante: #6018f0;
+  --color-oscuro: #3c1884;
+  --color-texto: #1a1a1a;
+  --color-suave: #f5f3fb;
+  --color-exito: #166534;
+  --color-alerta: #b45309;
+  --radio: 14px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--color-texto);
+  background: var(--color-suave);
+}
+
+.contenedor { max-width: 1100px; margin: 0 auto; padding: 24px 16px 48px; }
+
+/* Encabezado */
+.encabezado { background: var(--color-oscuro); color: #fff; padding: 20px 16px; text-align: center; }
+.encabezado__marca { margin: 0; font-size: 2rem; }
+.encabezado__eslogan { margin: 4px 0 0; opacity: 0.85; }
+.encabezado__nav { display: flex; gap: 16px; justify-content: center; margin-top: 12px; }
+.encabezado__nav a { color: #fff; text-decoration: none; opacity: 0.85; }
+.encabezado__nav a.activo { opacity: 1; font-weight: 700; border-bottom: 2px solid #fff; }
+
+/* Listado */
+.listado__titulo { margin: 0; color: var(--color-oscuro); }
+.listado__total { margin: 4px 0 20px; color: #555; }
+.listado__grilla { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; }
+.listado__vacio { color: #555; }
+
+/* Tarjeta */
+.tarjeta { background: #fff; border-radius: var(--radio); padding: 18px; box-shadow: 0 4px 14px rgb(60 24 132 / 0.08); display: flex; flex-direction: column; gap: 6px; }
+.tarjeta--adoptada { opacity: 0.7; }
+.tarjeta__etiquetas { display: flex; gap: 6px; flex-wrap: wrap; }
+.tarjeta__nombre { margin: 6px 0 2px; font-size: 1.2rem; }
+.tarjeta__dato { margin: 0; color: #444; }
+.tarjeta__descripcion { margin: 4px 0 0; color: #444; font-size: 0.95rem; }
+.tarjeta__acciones { display: flex; gap: 8px; margin-top: auto; padding-top: 12px; }
+
+/* Etiqueta */
+.etiqueta { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: 0.8rem; font-weight: 600; text-transform: capitalize; }
+.etiqueta--neutro { background: var(--color-suave); color: var(--color-oscuro); }
+.etiqueta--exito { background: #dcfce7; color: var(--color-exito); }
+.etiqueta--alerta { background: #fef3c7; color: var(--color-alerta); }
+
+/* Botones y formularios */
+.boton { flex: 1; border: none; border-radius: 10px; padding: 10px 12px; font-weight: 600; cursor: pointer; background: var(--color-principal); color: #fff; text-align: center; text-decoration: none; }
+.boton:hover { background: var(--color-vibrante); }
+.boton:disabled { background: #c9c4d6; cursor: not-allowed; }
+.boton--secundario { background: var(--color-suave); color: var(--color-oscuro); }
+.campo { display: flex; flex-direction: column; gap: 4px; margin-bottom: 12px; }
+.campo input, .campo textarea { padding: 10px; border: 1px solid #d8d2ea; border-radius: 10px; font: inherit; }
+
+/* Mensajes */
+.mensaje { padding: 12px 16px; border-radius: 10px; background: #fff; }
+.mensaje--error { background: #fee2e2; color: #b91c1c; }
+.mensaje--exito { background: #dcfce7; color: var(--color-exito); }
