@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { Etiqueta } from './shared/etiqueta/etiqueta';
+import { Encabezado } from './components/encabezado/encabezado';
 
 @Component({
-  imports: [Etiqueta],
+  imports: [Encabezado],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
