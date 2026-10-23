@@ -1,8 +1,8 @@
-<main  class="contenedor" >
-    <h3 data-testid="total-mascotas" class="listado__titulo">{{mascotas().length}} mascotas registradas</h3>
-    @for(m of mascotas(); track m.id){
+<h3 data-testid="total-mascotas" class="listado__total">{{mascotas.length}} mascotas registradas</h3>
+<section  class="listado__grilla" >
+    @for(m of mascotas; track m.id){
         <app-tarjeta-mascota  [mascota] = "m" />
     } @empty {
         <p data-testid="sin-mascotas" > No hay mascotas para mostrar. </p>
     }
-</main>
+</section>

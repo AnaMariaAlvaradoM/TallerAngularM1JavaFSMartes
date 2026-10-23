@@ -9,5 +9,5 @@ import { MASCOTAS } from '../../data/mascotas.mock';
   templateUrl: './listado-mascotas.html',
 })
 export class ListadoMascotas {
-  mascotas = signal (MASCOTAS)
+  mascotas =  (MASCOTAS)
 }
