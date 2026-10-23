@@ -4,7 +4,7 @@ export interface Mascota {
     id : number
     nombre : string
     especie : tipoEspecie
-    edad : number
+    edadMeses : number
     descripcion : string
     adoptado : boolean
 };

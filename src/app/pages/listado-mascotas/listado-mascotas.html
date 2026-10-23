@@ -1,1 +1,8 @@
-<p>listado-mascotas works!</p>
+<main  class="contenedor" >
+    <h3 data-testid="total-mascotas" class="listado__titulo">{{mascotas().length}} mascotas registradas</h3>
+    @for(m of mascotas(); track m.id){
+        <app-tarjeta-mascota  [mascota] = "m" />
+    } @empty {
+        <p data-testid="sin-mascotas" > No hay mascotas para mostrar. </p>
+    }
+</main>

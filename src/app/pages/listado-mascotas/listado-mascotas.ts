@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { TarjetaMascota } from '../../components/tarjeta-mascota/tarjeta-mascota';
-import { MASCOTAS } from '../../data/mascotas.mocks';
+import { MASCOTAS } from '../../data/mascotas.mock';
 
 @Component({
   imports: [TarjetaMascota],
@@ -9,5 +9,5 @@ import { MASCOTAS } from '../../data/mascotas.mocks';
   templateUrl: './listado-mascotas.html',
 })
 export class ListadoMascotas {
-  mascotas = MASCOTAS
+  mascotas = signal (MASCOTAS)
 }

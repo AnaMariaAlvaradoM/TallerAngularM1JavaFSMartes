@@ -16,4 +16,14 @@ export class TarjetaMascota {
     return this.mascota().adoptado;
   }
 
+  edadTexto(): string {
+    const edadM : number =  this.mascota().edadMeses;
+    if(edadM < 12){
+      return edadM === 1 ? '1 mes' : `${edadM} meses`; 
+    }else{
+      const anhios: number = Math.trunc(edadM / 12);
+      return anhios ===1 ? '1 año' : `${anhios} años`;
+    }
+  }
+
 }
