@@ -3,7 +3,7 @@
     <div class="tarjeta__etiquetas">
         <app-etiqueta [texto] = "mascota().especie"  />
         @if(estaAdoptado()){
-            <app-etiqueta texto = "Adoptado" tono = "exito"/>
+            <app-etiqueta texto = "Adoptada" tono = "exito"/>
         }
     </div>
     <h3 data-testid= "nombre-mascota" class="tarjeta__nombre"> {{mascota().nombre}} </h3>
