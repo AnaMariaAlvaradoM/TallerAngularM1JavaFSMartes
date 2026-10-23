@@ -1,12 +1,12 @@
 <article class="tarjeta" [class.tarjeta--adoptada] = "estaAdoptado()" >
     
-    <div class="tarjeta_etiquetas">
+    <div class="tarjeta__etiquetas">
         <app-etiqueta [texto] = "mascota().especie"  />
         @if(estaAdoptado()){
             <app-etiqueta texto = "Adoptado" tono = "exito"/>
         }
     </div>
     <h3 data-testid= "nombre-mascota" class="tarjeta__nombre"> {{mascota().nombre}} </h3>
-    <p data-testid="edad-mascota" class="tarjeta_dato"> {{edadTexto()}}</p>
+    <p data-testid="edad-mascota" class="tarjeta__dato"> {{edadTexto()}}</p>
 
 </article>

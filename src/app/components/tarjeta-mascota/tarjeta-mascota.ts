@@ -13,7 +13,7 @@ export class TarjetaMascota {
   mascota = input.required<Mascota>();
 
   estaAdoptado(): boolean {
-    return this.mascota().adoptado;
+    return this.mascota().adoptada;
   }
 
   edadTexto(): string {

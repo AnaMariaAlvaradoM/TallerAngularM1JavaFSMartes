@@ -7,7 +7,7 @@ export const MASCOTAS: Mascota[] = [
     especie: 'perro',
     edadMeses: 3,
     descripcion: 'Labrador muy juguetón, le encanta correr y traer la pelota.',
-    adoptado: false,
+    adoptada: false,
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const MASCOTAS: Mascota[] = [
     especie: 'gato',
     edadMeses: 12,
     descripcion: 'Gata tranquila y cariñosa, ideal para apartamento.',
-    adoptado: true,
+    adoptada: true,
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ export const MASCOTAS: Mascota[] = [
     especie: 'perro',
     edadMeses: 25,
     descripcion: 'Pastor alemán leal y protector, ya sabe obedecer órdenes básicas.',
-    adoptado: false,
+    adoptada: false,
   },
   {
     id: 4,
@@ -31,7 +31,7 @@ export const MASCOTAS: Mascota[] = [
     especie: 'gato',
     edadMeses: 21,
     descripcion: 'Gatito curioso y lleno de energía, se lleva bien con otros gatos.',
-    adoptado: false,
+    adoptada: false,
   },
   {
     id: 5,
@@ -39,7 +39,7 @@ export const MASCOTAS: Mascota[] = [
     especie: 'perro',
     edadMeses: 57,
     descripcion: 'Perrita mestiza de edad adulta, muy dócil y perfecta para familias con niños.',
-    adoptado: true,
+    adoptada: true,
   },
   {
     id: 6,
@@ -47,7 +47,7 @@ export const MASCOTAS: Mascota[] = [
     especie: 'gato',
     edadMeses: 4,
     descripcion: 'Gato naranja independiente, disfruta tomar el sol en la ventana.',
-    adoptado: false,
+    adoptada: false,
   },
   {
     id: 7,
@@ -55,7 +55,7 @@ export const MASCOTAS: Mascota[] = [
     especie: 'perro',
     edadMeses: 11,
     descripcion: 'Cachorro beagle muy sociable, necesita paseos diarios.',
-    adoptado: false,
+    adoptada: false,
   },
   {
     id: 8,
@@ -63,7 +63,7 @@ export const MASCOTAS: Mascota[] = [
     especie: 'gato',
     edadMeses: 46,
     descripcion: 'Gata siamesa muy expresiva, le gusta la compañía de las personas.',
-    adoptado: true,
+    adoptada: true,
   },
   {
     id: 9,
@@ -71,7 +71,7 @@ export const MASCOTAS: Mascota[] = [
     especie: 'perro',
     edadMeses: 24,
     descripcion: 'Bulldog francés tranquilo, ideal para espacios pequeños.',
-    adoptado: false,
+    adoptada: false,
   },
   {
     id: 10,
@@ -79,6 +79,6 @@ export const MASCOTAS: Mascota[] = [
     especie: 'gato',
     edadMeses: 13,
     descripcion: 'Gata negra rescatada, algo tímida al principio pero muy afectuosa.',
-    adoptado: false,
+    adoptada: false,
     },
 ]
