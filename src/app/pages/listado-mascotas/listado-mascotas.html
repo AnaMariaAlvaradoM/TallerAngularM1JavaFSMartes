@@ -1,0 +1,12 @@
+<section class="listado">
+    <h2 class="listado__titulo">Conocé a nuestras mascotas</h2>
+    <p data-testid="total-mascotas" class="listado__total"> {{ mascotas.length }} mascotas buscan hogar </p>
+
+    <div class="listado__grilla">
+        @for (mascota of mascotas; track mascota.id) {
+        <app-tarjeta-mascota [mascota]="mascota" />
+        } @empty {
+        <p data-testid="sin-mascotas" class="listado__vacio"> No hay mascotas por ahora </p>
+        }
+    </div>
+</section>
