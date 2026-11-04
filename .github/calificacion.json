@@ -21,6 +21,14 @@
     { "id": "1.4", "titulo": "Encabezado", "test": "src/pruebas/fase1/04-encabezado.spec.ts" },
     { "id": "1.5", "titulo": "Tarjeta de mascota", "test": "src/pruebas/fase1/05-tarjeta-mascota.spec.ts" },
     { "id": "1.6", "titulo": "Listado de mascotas", "test": "src/pruebas/fase1/06-listado-mascotas.spec.ts" },
-    { "id": "1.7", "titulo": "Estructura", "test": "src/pruebas/fase1/07-estructura.test.mjs" }
+    { "id": "1.7", "titulo": "Estructura", "test": "src/pruebas/fase1/07-estructura.test.mjs" },
+    { "id": "2.1", "titulo": "Rutas", "test": "src/pruebas/fase2/01-rutas.spec.ts" },
+    { "id": "2.2", "titulo": "Navegación completa", "test": "src/pruebas/fase2/02-navegacion.spec.ts" },
+    { "id": "2.3", "titulo": "Inicio", "test": "src/pruebas/fase2/03-inicio.spec.ts" },
+    { "id": "2.4", "titulo": "Detalle de mascota", "test": "src/pruebas/fase2/04-detalle-mascota.spec.ts" },
+    { "id": "2.5", "titulo": "Enlace de la tarjeta", "test": "src/pruebas/fase2/05-enlace-tarjeta.spec.ts" },
+    { "id": "2.6", "titulo": "Página 404", "test": "src/pruebas/fase2/06-no-encontrada.spec.ts" },
+    { "id": "2.7", "titulo": "Navegación del encabezado", "test": "src/pruebas/fase2/07-navegacion-encabezado.spec.ts" },
+    { "id": "2.8", "titulo": "Estructura del router", "test": "src/pruebas/fase2/08-estructura.test.mjs" }
   ]
 }
