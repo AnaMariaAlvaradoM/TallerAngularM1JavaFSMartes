@@ -1,0 +1,21 @@
+<article class="tarjeta-mascota" [class.tarjeta-mascota--adoptada]="estaAdoptada()">
+    <div class="tarjeta-etiqueta">
+        <app-etiqueta [texto]="mascota().especie"></app-etiqueta>
+        @if (estaAdoptada()) {
+            <app-etiqueta texto="Adoptada" tono="exito" />
+        } @else {
+            <app-etiqueta texto="Disponible" tono="info" />
+        }
+    </div>
+    <h3 class="tarjeta-mascota__nombre" data-testid="nombre-mascota">{{ mascota().nombre }}</h3>
+    <p class="tarjeta-mascota__dato">Especie: {{ mascota().especie }}</p>
+    <p class="tarjeta-mascota__dato" data-testid="edad-mascota">Edad: {{ edadMascota() }}</p>
+    @if (mostrarDescripcion) {
+      <p class="tarjeta-mascota__descripcion">{{ mascota().descripcion }}</p>
+    }
+
+    <div class="tarjeta-mascota__botones">
+        <button class="boton boton--primario" (click)="adoptar()" [disabled]="estaAdoptada()">Adoptar</button>
+        <button class="boton boton--secundario" (click)="verMas()">Ver más</button>
+    </div>
+</article>
