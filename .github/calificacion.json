@@ -1,6 +1,6 @@
 {
   "curso": "🐾 Huella Amiga · Taller Angular · Módulo 1",
-  "fechaLimite": "2026-11-15T23:59:00-05:00",
+  "fechaLimite": "2026-11-22T23:59:00-05:00",
   "patronTest": "^\\s*it\\(",
   "entregables": ["src/app/"],
   "protegidos": [

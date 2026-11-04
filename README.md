@@ -182,7 +182,7 @@ Para subir la nota: corrige, prueba con `npm run calificar` y vuelve a hacer `gi
 > **La nota se calcula sobre las fases publicadas.** Cuando sale una fase nueva, tu nota baja hasta que la completes: es normal.
 
 > [!WARNING]
-> **Fecha límite del taller:** domingo 15 de noviembre de 2026, 11:59 p. m. Después de esa hora los `push` ya no cambian la nota. Una primera entrega después del cierre queda con la etiqueta `⏰ Fuera de plazo`.
+> **Fecha límite del taller:** domingo 22 de noviembre de 2026, 11:59 p. m. Después de esa hora los `push` ya no cambian la nota. Una primera entrega después del cierre queda con la etiqueta `⏰ Fuera de plazo`.
 
 ---
 
