@@ -14,4 +14,8 @@
   </p>
 
   <p class="tarjeta__descripcion">{{ mascota().descripcion }}</p>
+
+  <div class="tarjeta__acciones">
+    <a class="boton boton--secundario" [routerLink]="['/mascotas', mascota().id]" data-testid="ver-detalle">Ver detalle</a>
+  </div>
 </article>

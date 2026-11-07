@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-encabezado',
   standalone: true,
-  template: `
-    <header class="encabezado">
-      <h1 data-testid="titulo-app">Huella Amiga</h1>
-    </header>
-  `,
+  imports: [RouterLink, RouterLinkActive],
+  templateUrl: './encabezado.html',
 })
 export class Encabezado {}
