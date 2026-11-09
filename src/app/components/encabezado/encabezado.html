@@ -1,0 +1,8 @@
+<header class="encabezado">
+  <h1 class="encabezado__marca" data-testid="titulo-app">{{ nombreApp }}</h1>
+  <p class="encabezado__eslogan">{{ eslogan }}</p>
+  <nav class="encabezado__nav">
+    <a routerLink="/" routerLinkActive="activo" [routerLinkActiveOptions]="{ exact: true }">Inicio</a>
+    <a routerLink="/mascotas" routerLinkActive="activo">Mascotas</a>
+  </nav>
+</header>

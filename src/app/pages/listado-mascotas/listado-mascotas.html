@@ -1,0 +1,12 @@
+<section class="listado">
+    <h2 class="listado__titulo">Listado de mascotas</h2>
+    <p class="listado__total" data-testid="total-mascotas">{{ mascotas.length }} mascotas en listado</p>
+  
+    <div class="listado__grilla">
+      @for (mascota of mascotas; track mascota.id) {
+        <app-tarjeta-mascota [mascota]="mascota" />
+      } @empty {
+        <p class="listado__vacio" data-testid="sin-mascotas">No hay mascotas en listado por ahora.</p>
+      }
+    </div>
+  </section>
