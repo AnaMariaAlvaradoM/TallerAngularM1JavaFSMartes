@@ -1,0 +1,13 @@
+<section class="listado">
+  <h2 class="listado__titulo">Conoce a quienes buscan hogar</h2>
+
+  <div class="listado__grilla">
+    @for (mascota of mascotasDisponibles; track mascota.id) {
+      <app-tarjeta-mascota [mascota]="mascota" />
+    }
+  </div>
+
+  <a routerLink="/mascotas" data-testid="ir-a-mascotas">
+    Ver todas las mascotas
+  </a>
+</section>
