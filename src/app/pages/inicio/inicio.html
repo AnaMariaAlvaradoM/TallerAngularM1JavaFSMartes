@@ -1,0 +1,12 @@
+<section class="portada">
+    <h2 class="portada__titulo">Adopta una mascota</h2>
+    <p class="portada__texto">Conoce a nuestras mascotas disponibles para adopción</p>
+    <a class="boton portada__boton" routerLink="/mascotas" data-testid="ir-a-mascotas">Ver todas las mascotas</a>
+  </section>
+  
+  <h2 class="listado__titulo">Mascotas disponibles</h2>
+  <div class="listado__grilla">
+    @for (mascota of destacados; track mascota.id) {
+      <app-tarjeta-mascota [mascota]="mascota" />
+    }
+  </div>

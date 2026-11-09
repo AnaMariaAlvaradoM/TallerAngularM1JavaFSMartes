@@ -16,6 +16,9 @@
 
     <div class="tarjeta-mascota__botones">
         <button class="boton boton--primario" (click)="adoptar()" [disabled]="estaAdoptada()">Adoptar</button>
-        <button class="boton boton--secundario" (click)="verMas()">Ver más</button>
+        <a class="boton boton--secundario" data-testid="ver-detalle" [routerLink]="['/mascotas', mascota().id]">Ver detalle</a>
+        <button class="boton boton--secundario" (click)="verMas()">
+          {{ mostrarDescripcion ? 'Ocultar detalles' : 'Ver más' }}
+        </button>
     </div>
 </article>

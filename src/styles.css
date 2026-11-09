@@ -62,3 +62,20 @@ body {
 .mensaje { padding: 12px 16px; border-radius: 10px; background: #fff; }
 .mensaje--error { background: #fee2e2; color: #b91c1c; }
 .mensaje--exito { background: #dcfce7; color: var(--color-exito); }
+
+/* ── Clase 2 · Navegación y páginas ── */
+.encabezado__nav { display: flex; justify-content: center; gap: 8px; margin-top: 14px; }
+.encabezado__nav a { color: #fff; text-decoration: none; padding: 6px 14px; border-radius: 999px; opacity: 0.8; }
+.encabezado__nav a:hover { opacity: 1; background: rgb(255 255 255 / 0.12); }
+.encabezado__nav a.activo { opacity: 1; background: var(--color-vibrante); font-weight: 600; }
+.tarjeta__nombre a { color: inherit; text-decoration: none; }
+.tarjeta__nombre a:hover { color: var(--color-principal); text-decoration: underline; }
+.portada { background: #fff; border-radius: var(--radio); padding: 28px 24px; margin-bottom: 28px; text-align: center; }
+.portada__titulo { margin: 0; color: var(--color-oscuro); }
+.portada__texto { color: #555; }
+.portada__boton { display: inline-block; flex: none; text-decoration: none; padding: 10px 22px; }
+.detalle { max-width: 420px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+.detalle__volver { color: var(--color-principal); text-decoration: none; font-weight: 600; }
+.aviso { background: #fff; border-radius: var(--radio); padding: 32px 24px; max-width: 520px; margin: 0 auto; text-align: center; }
+.aviso .boton { display: inline-block; flex: none; text-decoration: none; padding: 10px 22px; }
+.aviso__codigo { margin: 0; font-size: 3rem; font-weight: 800; color: var(--color-principal); }
