@@ -29,6 +29,15 @@
     { "id": "2.5", "titulo": "Enlace de la tarjeta", "test": "src/pruebas/fase2/05-enlace-tarjeta.spec.ts" },
     { "id": "2.6", "titulo": "Página 404", "test": "src/pruebas/fase2/06-no-encontrada.spec.ts" },
     { "id": "2.7", "titulo": "Navegación del encabezado", "test": "src/pruebas/fase2/07-navegacion-encabezado.spec.ts" },
-    { "id": "2.8", "titulo": "Estructura del router", "test": "src/pruebas/fase2/08-estructura.test.mjs" }
+    { "id": "2.8", "titulo": "Estructura del router", "test": "src/pruebas/fase2/08-estructura.test.mjs" },
+    { "id": "3.1", "titulo": "FavoritosStore", "test": "src/pruebas/fase3/01-favoritos-store.spec.ts" },
+    { "id": "3.2", "titulo": "alternar y esFavorita", "test": "src/pruebas/fase3/02-alternar.spec.ts" },
+    { "id": "3.3", "titulo": "Botón de favorito en la tarjeta", "test": "src/pruebas/fase3/03-tarjeta-favorito.spec.ts" },
+    { "id": "3.4", "titulo": "Buscador del listado", "test": "src/pruebas/fase3/04-buscador.spec.ts" },
+    { "id": "3.5", "titulo": "Casilla solo disponibles", "test": "src/pruebas/fase3/05-solo-disponibles.spec.ts" },
+    { "id": "3.6", "titulo": "Total filtrado y favoritas desde el listado", "test": "src/pruebas/fase3/06-listado-conectado.spec.ts" },
+    { "id": "3.7", "titulo": "Contador en el encabezado", "test": "src/pruebas/fase3/07-contador-encabezado.spec.ts" },
+    { "id": "3.8", "titulo": "Página Mi lista", "test": "src/pruebas/fase3/08-mi-lista.spec.ts" },
+    { "id": "3.9", "titulo": "Estructura del estado", "test": "src/pruebas/fase3/09-estructura.test.mjs" }
   ]
 }
