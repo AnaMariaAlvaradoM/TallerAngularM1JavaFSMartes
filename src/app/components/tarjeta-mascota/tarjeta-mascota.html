@@ -14,4 +14,10 @@
   <p class="tarjeta__dato" data-testid="edad-mascota">
     {{ edadFormateada() }}
   </p>
+  <a
+  [routerLink]="['/mascotas', mascota().id]"
+  data-testid="ver-detalle"
+>
+  Ver detalle
+</a>
 </article>

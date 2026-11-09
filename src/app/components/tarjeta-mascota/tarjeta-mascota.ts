@@ -1,9 +1,10 @@
 import { Component, input } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { Mascota } from '../../models/mascota';
 import { Etiqueta } from '../../shared/etiqueta/etiqueta';
 
 @Component({
-  imports: [Etiqueta],
+  imports: [Etiqueta, RouterLink],
   selector: 'app-tarjeta-mascota',
   styleUrl: './tarjeta-mascota.css',
   templateUrl: './tarjeta-mascota.html',

@@ -1,3 +1,16 @@
 <header class="encabezado">
   <h1 class="encabezado__marca" data-testid="titulo-app"> Huella Amiga</h1>
+  <nav class="encabezado__nav">
+  <a
+    routerLink="/"
+    routerLinkActive="activo"
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
+    Inicio
+  </a>
+
+  <a routerLink="/mascotas" routerLinkActive="activo">
+    Mascotas
+  </a>
+</nav>
 </header>

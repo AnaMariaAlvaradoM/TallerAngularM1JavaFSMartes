@@ -18,3 +18,15 @@ Nada
 **4. Qué cambié y cómo lo verifiqué** (documentación, pruebas, navegador):
 
 ---
+## Fase 1 · Base y componentes
+**1. Qué le pedí a la IA (el prompt):**
+Le pedi ayuda con rutas, navegación y correcciones.
+
+**2. Qué me propuso (resumen, sin pegar todo):**
+Explicaciones y recomendaciones.
+
+**3. Qué detecté**
+Nadaa fuera de lo normal.
+
+**4. Qué cambié y cómo lo verifiqué** (documentación, pruebas, navegador):
+
