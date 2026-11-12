@@ -15,6 +15,7 @@ Que identificará que componente muestra, cual controla, de donde vienen los dat
 **3. Qué detecté** (señales de Angular viejo, errores o cosas que no entendía):
 Inicialmente tenia errores porque agregue el código ts en el archivo css, cambie el código al archivo que correspondía.
 No entendía en tarjeta mascota como debia incluir los requerimientos, qué iba en ts y qué en HTML, y como debia incluirlo.
+No sé que es detector de angular viejo.
 
 
 **4. Qué cambié y cómo lo verifiqué** (documentación, pruebas, navegador):
