@@ -52,6 +52,15 @@ function traducirError(mensaje) {
   if ((m = mensaje.match(/NG8001: '([^']+)' is not a known element/))) {
     return `Angular no conoce <${m[1]}>: agrega su clase al imports del componente que lo usa.`;
   }
+  if (/NG8002: Can't bind to 'routerLink(Active)?'/.test(mensaje) || /NG8001: 'router-outlet' is not a known element/.test(mensaje)) {
+    return "Usas routerLink, routerLinkActive o <router-outlet> sin importarlo: agrega RouterLink, RouterLinkActive o RouterOutlet al imports del componente.";
+  }
+  if ((m = mensaje.match(/NG0950: Input "([^"]+)" is required but no value is available yet/))) {
+    return `El input "${m[1]}" llegó vacío: si viene de la URL, ¿pusiste withComponentInputBinding() en app.config.ts?`;
+  }
+  if (/TS2367: .*'number' and 'string' have no overlap/.test(mensaje)) {
+    return "Comparas un número con un texto: el id de la URL llega como texto, conviértelo con Number(...).";
+  }
   if ((m = mensaje.match(/NG8002: Can't bind to '([^']+)'/))) {
     return `Le pasas [${m[1]}] a un componente que no tiene ese input (o que no está en imports).`;
   }

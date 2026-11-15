@@ -32,10 +32,10 @@ Hay dos tipos en este taller:
 
 | Fase | Se publica | Tema | Enunciado | Checkpoint |
 |---|---|---|---|---|
-| 1 | Mar 20 oct | Base y componentes | [`fases/FASE-1.md`](fases/FASE-1.md) | Lun 26 oct · 11:59 p. m. |
-| 2 | Mar 27 oct | Navegación | Se publica después de la Clase 2 | Lun 2 nov |
-| 3 | Mar 3 nov | Estado compartido + revisión entre pares | Se publica después de la Clase 3 | Lun 9 nov |
-| 4 | Mar 10 nov | API real, refactor y entrega | Se publica después de la Clase 4 | Dom 15 nov |
+| 1 | Mar 20 oct | Base y componentes | [`fases/FASE-1.md`](fases/FASE-1.md) | Lun 2 nov · 11:59 p. m. |
+| 2 | Mar 3 nov | Navegación | [`fases/FASE-2.md`](fases/FASE-2.md) | Lun 9 nov · 11:59 p. m. |
+| 3 | Mar 10 nov | Estado compartido + revisión entre pares | [`fases/FASE-3.md`](fases/FASE-3.md) | Lun 16 nov · 11:59 p. m. |
+| 4 | Mar 17 nov | API real, refactor y entrega | Se publica después de la Clase 4 | Dom 22 nov |
 
 Todas las fases se trabajan **en este mismo repo** y se entregan en **el mismo Pull Request**. Cuando se publica una fase nueva, actualizas tu copia (Paso 8) y sigues.
 
@@ -97,7 +97,7 @@ ng serve --open
 
 ## Paso 3 · Resolver la fase
 
-1. Abre el enunciado de la fase: [`fases/FASE-1.md`](fases/FASE-1.md).
+1. Abre el enunciado de la fase que estás trabajando: [`fases/FASE-1.md`](fases/FASE-1.md), [`fases/FASE-2.md`](fases/FASE-2.md), [`fases/FASE-3.md`](fases/FASE-3.md)…
 2. Todo tu código va dentro de **`src/app/`**.
 3. Crea los componentes con el CLI, igual que en clase (`ng g c ... --skip-tests`).
 
@@ -182,7 +182,7 @@ Para subir la nota: corrige, prueba con `npm run calificar` y vuelve a hacer `gi
 > **La nota se calcula sobre las fases publicadas.** Cuando sale una fase nueva, tu nota baja hasta que la completes: es normal.
 
 > [!WARNING]
-> **Fecha límite del taller:** domingo 15 de noviembre de 2026, 11:59 p. m. Después de esa hora los `push` ya no cambian la nota. Una primera entrega después del cierre queda con la etiqueta `⏰ Fuera de plazo`.
+> **Fecha límite del taller:** domingo 22 de noviembre de 2026, 11:59 p. m. Después de esa hora los `push` ya no cambian la nota. Una primera entrega después del cierre queda con la etiqueta `⏰ Fuera de plazo`.
 
 ---
 
@@ -244,6 +244,18 @@ Escribe `@for (mascota of mascotas; track mascota.id)`.
 
 ### Una prueba de estructura dice "Falta src/app/services"
 Git no sube carpetas vacías. Crea dentro de `services/` un archivo vacío llamado `.gitkeep`.
+
+### "Usas routerLink, routerLinkActive o <router-outlet> sin importarlo"
+
+El componente usa algo del router en su plantilla, pero no lo tiene en `imports`. Agrega `RouterLink`, `RouterLinkActive` o `RouterOutlet` (de `@angular/router`) al `imports` de ese componente.
+
+### "El input "id" llegó vacío"
+
+El detalle no recibe el `id` de la URL. Revisa que `app.config.ts` tenga `provideRouter(routes, withComponentInputBinding())`.
+
+### "Comparas un número con un texto"
+
+El `id` de la URL llega como texto (`'3'`) y el de tu mascota es número (`3`). Conviértelo con `Number(this.id())` antes de comparar.
 
 ### "Please tell me who you are" al hacer commit
 Git no sabe tu nombre. Ejecuta una sola vez (con tus datos):

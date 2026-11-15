@@ -17,7 +17,7 @@ it('existe la carpeta services (con un .gitkeep para que Git la suba)', () => {
 });
 
 it('el listado recorre las mascotas con @for y track', () => {
-  assert.match(leer('pages/listado-mascotas/listado-mascotas.html'), /@for\s*\([^)]*;\s*track\s+/, 'listado-mascotas.html debería usar @for (...; track ...)');
+  assert.match(leer('pages/listado-mascotas/listado-mascotas.html'), /@for\s*\([^;]*;\s*track\s+/, 'listado-mascotas.html debería usar @for (...; track ...)');
 });
 
 it('el listado tiene @empty con data-testid="sin-mascotas"', () => {
