@@ -1,15 +1,17 @@
 import { Component, input } from '@angular/core';
 import { Mascota } from '../../models/mascota';
 import { Etiqueta } from '../../shared/etiqueta/etiqueta';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  imports: [Etiqueta],
+  imports: [Etiqueta, RouterLink],
   selector: 'app-tarjeta-mascota',
   styleUrl: './tarjeta-mascota.css',
   templateUrl: './tarjeta-mascota.html',
 })
 export class TarjetaMascota {
   mascota = input.required<Mascota>();
+  mostrarDescripcion = false;
 
   mostrarEdad(): string {
     if (this.mascota().edadMeses === 1) {
@@ -25,5 +27,4 @@ export class TarjetaMascota {
       return Math.floor(this.mascota().edadMeses / 12) + " años";
     }
   }
-
 }
