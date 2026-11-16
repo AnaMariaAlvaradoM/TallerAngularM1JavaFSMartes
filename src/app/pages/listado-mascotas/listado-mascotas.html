@@ -1,0 +1,17 @@
+<section class="listado">
+  <h2 class="listado__titulo">Mascotas en adopción</h2>
+
+  <p class="listado__total" data-testid="total-mascotas">
+    {{ mascotas.length }} mascotas en la fundación
+  </p>
+
+  <div class="listado__grilla">
+    @for (mascota of mascotas; track mascota.id) {
+      <app-tarjeta-mascota [mascota]="mascota" />
+    } @empty {
+      <p class="listado__vacio" data-testid="sin-mascotas">
+        No hay mascotas para mostrar.
+      </p>
+    }
+  </div>
+</section>
