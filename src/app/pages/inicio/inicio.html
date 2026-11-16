@@ -1,0 +1,14 @@
+<section class="tarjeta">
+    <h2 class="listado__titulo">Las mascotas mas adorables pueden ser tuyas</h2>
+    <p class="tarjeta__descripcion">Adopta y dale una vida llena de felicidad a una de nuestras mascotas</p>
+    <div class="tarjeta__acciones">
+        <a data-testid="ir-a-mascotas" class="boton" routerLink="/mascotas">Explorar mascotas</a>
+    </div>
+</section>
+
+<h2 class="listado__titulo">Disponibles, sin adoptar</h2>
+<div class="listado__grilla">
+    @for (mascota of disponibles; track mascota.id) {
+    <app-tarjeta-mascota [mascota]="mascota" />
+    }
+</div>

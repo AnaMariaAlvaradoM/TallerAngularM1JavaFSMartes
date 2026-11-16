@@ -1,0 +1,19 @@
+@if (mascotaActual(); as mascota) {
+<section class="tarjeta">
+    <h2 data-testid="detalle-nombre" class="tarjeta__nombre">{{ mascota.nombre }}</h2>
+    <p class="tarjeta__dato">{{ mascota.especie }}</p>
+    <p class="tarjeta__dato">{{ mascota.edadMeses }} meses</p>
+    <p class="tarjeta__descripcion">{{ mascota.descripcion }}</p>
+    <div class="tarjeta__acciones">
+        <a class="boton boton--secundario" routerLink="/mascotas">Volver al listado</a>
+    </div>
+</section>
+} @else {
+<section class="tarjeta mensaje mensaje--error">
+    <h2 data-testid="mascota-no-encontrada" class="listado__titulo">Mascota no encontrada</h2>
+    <p class="tarjeta__descripcion">En Huella Amiga no hay ninguna mascota con el número {{ id() }}</p>
+    <div class="tarjeta__acciones">
+        <a data-testid="volver-listado" class="boton boton--secundario" routerLink="/mascotas">Ver el listado de mascotas</a>
+    </div>
+</section>
+}
