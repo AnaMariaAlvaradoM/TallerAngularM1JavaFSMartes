@@ -35,7 +35,7 @@ Hay dos tipos en este taller:
 | 1 | Mar 20 oct | Base y componentes | [`fases/FASE-1.md`](fases/FASE-1.md) | Lun 2 nov · 11:59 p. m. |
 | 2 | Mar 3 nov | Navegación | [`fases/FASE-2.md`](fases/FASE-2.md) | Lun 9 nov · 11:59 p. m. |
 | 3 | Mar 10 nov | Estado compartido + revisión entre pares | [`fases/FASE-3.md`](fases/FASE-3.md) | Lun 16 nov · 11:59 p. m. |
-| 4 | Mar 17 nov | API real, refactor y entrega | Se publica después de la Clase 4 | Dom 22 nov |
+| 4 | Mar 17 nov | API real, refactor y entrega | [`fases/FASE-4.md`](fases/FASE-4.md) | Dom 22 nov · 11:59 p. m. (cierre) |
 
 Todas las fases se trabajan **en este mismo repo** y se entregan en **el mismo Pull Request**. Cuando se publica una fase nueva, actualizas tu copia (Paso 8) y sigues.
 
@@ -97,7 +97,7 @@ ng serve --open
 
 ## Paso 3 · Resolver la fase
 
-1. Abre el enunciado de la fase que estás trabajando: [`fases/FASE-1.md`](fases/FASE-1.md), [`fases/FASE-2.md`](fases/FASE-2.md), [`fases/FASE-3.md`](fases/FASE-3.md)…
+1. Abre el enunciado de la fase que estás trabajando: [`fases/FASE-1.md`](fases/FASE-1.md), [`fases/FASE-2.md`](fases/FASE-2.md), [`fases/FASE-3.md`](fases/FASE-3.md), [`fases/FASE-4.md`](fases/FASE-4.md).
 2. Todo tu código va dentro de **`src/app/`**.
 3. Crea los componentes con el CLI, igual que en clase (`ng g c ... --skip-tests`).
 
@@ -211,6 +211,7 @@ Si **Sync fork** dice que hay conflictos, es porque modificaste un archivo que n
 - `.github/`
 - `package.json` y `package-lock.json`
 - `angular.json`, `tsconfig.json`, `tsconfig.app.json` y `tsconfig.spec.json`
+- `proxy.conf.json` (viene listo desde la Fase 4)
 
 **Si los modificas:** tu PR queda con la etiqueta `⚠️ Revisar` y la profe lo revisa a mano. La nota se calcula igual, **con las pruebas originales**: cambiarlas no sube la nota.
 
