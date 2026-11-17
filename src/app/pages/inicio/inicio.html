@@ -1,0 +1,12 @@
+<section class="portada">
+    <h2 class="portada__titulo">Tu próximo mejor amigo en un solo lugar.</h2>
+    <p class="portada__texto">Perros o gatos. Elige, comparte y adopta.</p>
+    <a data-testid="ir-a-mascotas" class="boton portada__boton" routerLink="/mascotas">Ver todos las mascotas.</a>
+</section>
+
+<h2 class="listado__titulo">Por adoptar</h2>
+<div class="listado__grilla">
+  @for (mascota of destacados; track mascota.id) {
+    <app-tarjeta-mascota [mascota]="mascota" />
+  }
+</div>
