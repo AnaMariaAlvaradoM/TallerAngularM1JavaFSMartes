@@ -1,0 +1,32 @@
+<article class="tarjeta">
+
+  <div class="tarjeta__etiquetas">
+    <app-etiqueta [texto]="mascota().especie" />
+
+    @if (mascota().adoptada) {
+      <app-etiqueta texto="Adoptada" tono="peligro" />
+    }
+  </div>
+
+  <h3 lass="tarjeta__nombre"
+  data-testid="nombre-mascota">
+  {{ mascota().nombre }}
+  </h3>
+
+  <p class="tarjeta__dato"
+  data-testid="edad-mascota">
+  {{ edadMascota() }}
+  </p>
+
+  <p data-testid="edad-mascota">
+    {{ edadMascota() }}
+  </p>
+  
+  <a
+  data-testid="ver-detalle"
+  [routerLink]="['/mascotas', mascota().id]">
+  Ver detalle
+</a>
+
+    
+</article>

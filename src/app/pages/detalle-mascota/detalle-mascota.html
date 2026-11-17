@@ -1,0 +1,23 @@
+@if (obtenerMascota()) {
+
+  <h2 data-testid="detalle-nombre">
+    {{ obtenerMascota()?.nombre }}
+  </h2>
+
+  <p>
+    {{ obtenerMascota()?.descripcion }}
+  </p>
+
+} @else {
+
+  <p data-testid="mascota-no-encontrada">
+    Mascota no encontrada
+  </p>
+
+  <a
+    routerLink="/mascotas"
+    data-testid="volver-listado">
+    Volver al listado
+  </a>
+
+}
