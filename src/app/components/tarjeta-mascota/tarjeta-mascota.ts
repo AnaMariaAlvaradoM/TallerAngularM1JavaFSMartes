@@ -12,21 +12,21 @@ export class TarjetaMascota {
 
   mascota = input.required<Mascota>();
 
-  mostrarDescripcion = false;
-
-  edadMascota(): number {
+  edadMascota(): string {
     const edad = this.mascota().edadMeses;
 
-  if (edad < 13) {
-  return edad;
-  }
-  return Math.floor(edad / 12)};
+    if (edad === 1) {
+      return '1 mes';
+    }
   
-  alternarDescripcion(): void {
-    this.mostrarDescripcion = !this.mostrarDescripcion;
-  }
-
-  estaDisponible(): boolean {
-    return this.mascota().adopcion;
+    if (edad < 12) {
+      return `${edad} meses`;
+    }
+  
+    if (edad < 24) {
+      return '1 año';
+    }
+  
+    return `${Math.floor(edad / 12)} años`;
   }
 }

@@ -3,47 +3,24 @@
   <div class="tarjeta__etiquetas">
     <app-etiqueta [texto]="mascota().especie" />
 
-    @if (estaDisponible()) {
-      <app-etiqueta texto="Disponible" tono="exito" />
-    } @else {
+    @if (mascota().adoptada) {
       <app-etiqueta texto="Adoptada" tono="peligro" />
     }
   </div>
 
-  <h3 class="tarjeta__nombre">
-    {{ mascota().nombre }}
+  <h3 lass="tarjeta__nombre"
+  data-testid="nombre-mascota">
+  {{ mascota().nombre }}
   </h3>
 
-  <p class="tarjeta__dato">
-    🐾 Especie: {{ mascota().especie }}
+  <p class="tarjeta__dato"
+  data-testid="edad-mascota">
+  {{ edadMascota() }}
   </p>
 
-  <p class="tarjeta__dato">
-    🎂 Edad: {{ edadMascota() }} {{ mascota().edadMeses < 12 ? 'meses' : (edadMascota() === 1 ? 'año' : 'años') }}
+  <p data-testid="edad-mascota">
+    {{ edadMascota() }}
   </p>
 
-  @if (mostrarDescripcion) {
-    <p class="tarjeta__descripcion">
-      {{ mascota().descripcion }}
-    </p>
-  }
-
-  <div class="tarjeta__acciones">
-    <button
-      type="button"
-      class="boton boton--secundario"
-      (click)="alternarDescripcion()">
-
-      {{ mostrarDescripcion ? 'Ocultar detalles' : 'Ver detalles' }}
-    </button>
-
-    <button
-      type="button"
-      class="boton"
-      [disabled]="!estaDisponible()">
-
-      Adoptar
-    </button>
-  </div>
-
+    
 </article>

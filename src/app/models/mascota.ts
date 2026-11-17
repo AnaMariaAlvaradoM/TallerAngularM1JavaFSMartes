@@ -1,10 +1,10 @@
-export type Mascotas = 'Nombre' | 'Especie' | 'Edad' | 'Adopción' ;
+export type Mascotas = 'Nombre' | 'Especie' | 'Edad' | 'Adoptada' ;
 
 export interface Mascota {
   id: number;
   nombre: string;
-  especie: 'Perro' | 'Gato';
+  especie: 'perro' | 'gato';
   edadMeses: number;
-  adopcion: boolean;
+  adoptada: boolean;
   descripcion: string;
 }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MASCOTAS } from '../../data/mascota.mock';
+import { MASCOTAS } from '../../data/mascotas.mock';
 import { TarjetaMascota } from '../../components/tarjeta-mascota/tarjeta-mascota';
 
 @Component({
