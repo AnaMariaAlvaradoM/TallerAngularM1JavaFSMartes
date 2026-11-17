@@ -44,7 +44,7 @@ export const MASCOTAS: Mascota[] = [
     nombre: 'Venka',
     especie: 'gato',
     edadMeses: 24,
-    adoptada: true,
+    adoptada: false,
     descripcion: 'para los taciturnos, amantes a la tranquilidad, los libros y el buen  cafe', 
   }
 ];

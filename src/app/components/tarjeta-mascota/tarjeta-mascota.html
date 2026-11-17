@@ -21,6 +21,12 @@
   <p data-testid="edad-mascota">
     {{ edadMascota() }}
   </p>
+  
+  <a
+  data-testid="ver-detalle"
+  [routerLink]="['/mascotas', mascota().id]">
+  Ver detalle
+</a>
 
     
 </article>

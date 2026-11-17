@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-encabezado',
+  imports: [RouterLink, RouterLinkActive],
   styleUrl: './encabezado.css',
   templateUrl: './encabezado.html',
 })
