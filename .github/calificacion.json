@@ -12,7 +12,8 @@
     "angular.json",
     "tsconfig.json",
     "tsconfig.app.json",
-    "tsconfig.spec.json"
+    "tsconfig.spec.json",
+    "proxy.conf.json"
   ],
   "ejercicios": [
     { "id": "1.1", "titulo": "Modelo Mascota", "test": "src/pruebas/fase1/01-modelo.spec.ts" },
@@ -38,6 +39,13 @@
     { "id": "3.6", "titulo": "Total filtrado y favoritas desde el listado", "test": "src/pruebas/fase3/06-listado-conectado.spec.ts" },
     { "id": "3.7", "titulo": "Contador en el encabezado", "test": "src/pruebas/fase3/07-contador-encabezado.spec.ts" },
     { "id": "3.8", "titulo": "Página Mi lista", "test": "src/pruebas/fase3/08-mi-lista.spec.ts" },
-    { "id": "3.9", "titulo": "Estructura del estado", "test": "src/pruebas/fase3/09-estructura.test.mjs" }
+    { "id": "3.9", "titulo": "Estructura del estado", "test": "src/pruebas/fase3/09-estructura.test.mjs" },
+    { "id": "4.1", "titulo": "Modelo SolicitudAdopcion", "test": "src/pruebas/fase4/01-modelo-solicitud.spec.ts" },
+    { "id": "4.2", "titulo": "MascotasApi", "test": "src/pruebas/fase4/02-mascotas-api.spec.ts" },
+    { "id": "4.3", "titulo": "mensajeDeError", "test": "src/pruebas/fase4/03-mensaje-error.spec.ts" },
+    { "id": "4.4", "titulo": "Listado conectado a la API", "test": "src/pruebas/fase4/04-listado-api.spec.ts" },
+    { "id": "4.5", "titulo": "Detalle conectado a la API", "test": "src/pruebas/fase4/05-detalle-api.spec.ts" },
+    { "id": "4.6", "titulo": "Solicitud de adopción", "test": "src/pruebas/fase4/06-solicitud-adopcion.spec.ts" },
+    { "id": "4.7", "titulo": "Estructura de la conexión", "test": "src/pruebas/fase4/07-estructura.test.mjs" }
   ]
 }
