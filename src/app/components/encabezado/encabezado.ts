@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
+    imports: [RouterLink, RouterLinkActive],
     selector: 'app-encabezado',
     styleUrl: './encabezado.css',
     templateUrl: './encabezado.html',
@@ -8,5 +10,5 @@ import { Component } from '@angular/core';
 
 export class Encabezado {
     nombreApp = 'Huella Amiga';
-    eslogan = 'Aqui va el eslogan';
+    eslogan = 'Encuentra a tu próximo amigo';
 }
